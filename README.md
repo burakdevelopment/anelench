@@ -6,8 +6,6 @@ feature and one without. When both exist, it computes which feasible joint obser
 Earth's telescopes would tell them apart, and then checks its own recommendation by adding that
 night and testing again.
 
-Built for Banana Hacks 2026 (Image AI).
-
 ## Quick start
 
 | System | Command |
@@ -17,9 +15,11 @@ Built for Banana Hacks 2026 (Image AI).
 
 The script finds Python 3.10+, installs the packages into a private `.venv` if they are missing,
 downloads the public EHT 2017 data once (about 4.5 MB), starts the engine and opens
-http://127.0.0.1:8000. Stop it with Ctrl+C.
+
+http://127.0.0.1:8000. 
 
 The `web/` folder also runs as a static site that replays results precomputed with the same code:
+
 `python -m http.server 8001 --directory web`, then open http://127.0.0.1:8001.
 
 Two documents explain everything:
