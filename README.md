@@ -154,3 +154,4 @@ EHT Collaboration 2019, ApJL 875 L1–L6, data release 2019-D01-01 (downloaded b
 `scripts/download_eht_data.py`, not redistributed). Chael et al., eht-imaging. Tancik et al. 2020.
 Ulyanov et al. 2018. Kingma & Welling 2014. Feng, Bouman & Freeman 2024. Dahale et al. 2025.
 Liaudat et al. 2024. Attia, Alexanderian & Saibaba 2018.
+
