@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anelench</title>
+  <meta name="description" content="Test whether a feature in a black-hole image is demanded by the data, and find the telescope observation that would settle it.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..800;1,100,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23f2a03d' stroke-width='4'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap masthead-row">
+      <div class="brand">
+        <span class="brand-name">Anelench</span>
+      </div>
+      <nav class="datasets" aria-label="Dataset">
+        <button class="ds" data-id="ghost" aria-pressed="false">Synthetic test A</button>
+        <button class="ds" data-id="knot" aria-pressed="false">Synthetic test B</button>
+        <button class="ds" data-id="m87-2017-101" aria-pressed="false">M87*, April 11 2017</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="step" id="step-1" aria-labelledby="h1">
+      <div class="wrap step-grid">
+        <div class="step-num" aria-hidden="true">1</div>
+        <div class="step-body">
+          <h1 id="h1" class="lead-title">Could the data be explained without it?</h1>
+          <p class="lede" id="ds-lede">Loading the dataset…</p>
+
+          <div class="recon">
+            <figure class="plate-fig big">
+              <div class="plate" id="ref-plate" tabindex="0" aria-label="Reconstructed image. Click to place the test region.">
+                <canvas width="512" height="512"></canvas>
+                <svg class="overlay" viewBox="0 0 512 512" aria-hidden="true"></svg>
+                <div class="plate-status" id="ref-status"></div>
+              </div>
+              <figcaption id="ref-caption">Reconstruction</figcaption>
+            </figure>
+
+            <div class="recon-side">
+              <div class="field">
+                <span class="field-label">Imaging assumption</span>
+                <div class="fam-strip" id="fam-strip" role="radiogroup" aria-label="Imaging assumption"></div>
+                <p class="fam-blurb" id="fam-blurb"></p>
+              </div>
+
+              <div class="field">
+                <span class="field-label">Feature under test</span>
+                <p class="claim" id="claim-text">Click the image to place a region.</p>
+                <label class="slider">
+                  <span>Region radius <output id="r-out">9 µas</output></span>
+                  <input type="range" id="r-in" min="5" max="16" step="0.5" value="9">
+                </label>
+                <label class="slider">
+                  <span>Claim threshold <output id="t-out">0.20</output></span>
+                  <input type="range" id="t-in" min="0.05" max="0.8" step="0.01" value="0.2">
+                </label>
+                <div class="readout">
+                  <span class="readout-num" id="q-ref">–</span>
+                  <span class="readout-label">brightness of the region relative to the ring peak, in this reconstruction, at 20 µas resolution</span>
+                </div>
+                <button class="primary" id="run-search" disabled>Test this feature</button>
+                <p class="hint" id="search-hint"></p>
+              </div>
+
+              <div class="field facts" id="facts"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="step" id="step-2" aria-labelledby="h2" hidden>
+      <div class="wrap step-grid">
+        <div class="step-num" aria-hidden="true">2</div>
+        <div class="step-body">
+          <h2 id="h2">Two explanations of the same measurements</h2>
+          <p class="verdict" id="verdict"></p>
+
+          <div class="pair">
+            <figure class="plate-fig">
+              <div class="plate frame-a" id="plate-a"><canvas width="384" height="384"></canvas><svg class="overlay" viewBox="0 0 384 384" aria-hidden="true"></svg></div>
+              <figcaption><span class="key key-a"></span><span id="cap-a">Without the feature</span></figcaption>
+            </figure>
+            <figure class="plate-fig">
+              <div class="plate frame-b" id="plate-b"><canvas width="384" height="384"></canvas><svg class="overlay" viewBox="0 0 384 384" aria-hidden="true"></svg></div>
+              <figcaption><span class="key key-b"></span><span id="cap-b">With the feature</span></figcaption>
+            </figure>
+            <figure class="plate-fig blink-fig">
+              <div class="plate" id="plate-blink"><canvas width="384" height="384"></canvas><svg class="overlay" viewBox="0 0 384 384" aria-hidden="true"></svg><span class="blink-tag" id="blink-tag"></span></div>
+              <figcaption>
+                <button class="ghost-btn" id="blink-btn" aria-pressed="true">Pause blink comparator</button>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="evidence">
+            <div class="ev-col">
+              <h3>Where each assumption allows the feature to be</h3>
+              <p class="note">Range of region brightness over every acceptable explanation found under each assumption. The line is your claim threshold.</p>
+              <div id="intervals" class="chart"></div>
+            </div>
+            <div class="ev-col wide">
+              <h3>Both explanations pass through the same closure phases</h3>
+              <p class="note">Measured closure phases (points, 1σ bars) and the predictions of each explanation, on the triangles where they differ most.</p>
+              <div id="fit" class="chart small-multiples"></div>
+            </div>
+          </div>
+          <button class="primary" id="run-design">Find the observation that separates them</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="step" id="step-3" aria-labelledby="h3t" hidden>
+      <div class="wrap step-grid">
+        <div class="step-num" aria-hidden="true">3</div>
+        <div class="step-body">
+          <h2 id="h3t">The observation that tells them apart</h2>
+          <p class="lede" id="plan-lede"></p>
+          <div class="plan">
+            <figure class="globe-fig">
+              <div id="globe" class="globe" role="img" aria-label="Earth seen from M87*, with the recommended stations and baselines"></div>
+              <figcaption>
+                Earth as seen from M87*: only stations on the visible face can observe it.
+                <label class="slider compact"><span>UT <output id="ut-out">–</output></span><input type="range" id="ut-in" min="0" max="24" step="0.05" value="4"></label>
+              </figcaption>
+            </figure>
+            <div class="plan-side">
+              <div class="rec" id="rec"></div>
+              <h3>What other strategies would schedule</h3>
+              <table class="picks" id="picks"></table>
+              <div id="observed" hidden>
+                <h3>Nights we held back from the 2017 campaign</h3>
+                <p class="note">These were really observed, so their real measurements can be revealed. Predicted separation is computed before looking at them.</p>
+                <table class="picks" id="observed-table"></table>
+              </div>
+              <h3>Every feasible night, by cost and separation</h3>
+              <p class="note">Shaded: over the budget of 70 weighted station-hours. Filled circle: Anelench's choice; rings: the other strategies.</p>
+              <div id="scatter" class="chart"></div>
+            </div>
+          </div>
+          <div class="signals">
+            <h3>What the recommended night would measure</h3>
+            <p class="note">Predicted closure phases under each explanation, with the expected 1σ noise of the new measurements.</p>
+            <div id="signals" class="chart small-multiples"></div>
+          </div>
+          <button class="primary" id="run-retest">Simulate the follow-up night and test again</button>
+          <p class="hint" id="retest-hint"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="step" id="step-4" aria-labelledby="h4t" hidden>
+      <div class="wrap step-grid">
+        <div class="step-num" aria-hidden="true">4</div>
+        <div class="step-body">
+          <h2 id="h4t">After the follow-up night</h2>
+          <p class="verdict" id="verdict-after"></p>
+          <div class="after">
+            <div>
+              <div id="before-after" class="chart"></div>
+              <p class="note" id="round-note"></p>
+              <button class="primary" id="run-round2" hidden>Plan and observe one more night</button>
+            </div>
+            <div class="truth-reveal" id="truth-reveal"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="step validation" id="validation" aria-labelledby="hv" hidden>
+      <div class="wrap">
+        <h2 id="hv">Does the planner beat simpler strategies?</h2>
+        <p class="lede" id="val-lede">Two checks of the planner: synthetic truths we can score exactly, and the real 2017 nights held back from the analysis.</p>
+        <div class="val-grid" id="val-grid" hidden>
+          <div>
+            <h3>How much doubt is left after one night</h3>
+            <p class="note">Mean width of the range of acceptable answers after each strategy's night was added and the full search re-run (smaller is more decisive), over truths that were undetermined at first.</p>
+            <div id="val-width" class="chart"></div>
+          </div>
+          <div>
+            <h3>Same budget, against the hidden truth</h3>
+            <table class="picks" id="val-table"></table>
+          </div>
+        </div>
+        <div class="val-real" id="val-real" hidden>
+          <h3>Retrospective test on real M87* data</h3>
+          <p class="note" id="val-real-note"></p>
+          <table class="picks" id="val-real-table"></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="method" id="method" aria-labelledby="hm">
+      <div class="wrap method-grid">
+        <h2 id="hm">How it works</h2>
+        <div class="method-cols">
+          <div>
+            <h3>Measurements, not pixels</h3>
+            <p>The Event Horizon Telescope samples the sky's Fourier transform at a few hundred points. Station gains corrupt each visibility, so Anelench fits only gain-invariant <em>closure phases</em> and <em>log closure amplitudes</em>, with a differentiable forward model of the real 2017 sampling.</p>
+          </div>
+          <div>
+            <h3>Counterexamples on purpose</h3>
+            <p>Image models with different built-in assumptions (entropy, total variation, two neural fields, a deep image prior, and two generative models trained on simulated black holes with and without knots) are each pushed to remove, then to strengthen, the marked feature while the fit stays within the noise a model would absorb anyway. If both sides survive, the feature is not established.</p>
+          </div>
+          <div>
+            <h3>Plan for the hardest pair</h3>
+            <p>For every feasible follow-up night, Anelench predicts what each witness pair would make the array measure and ranks packages by the worst-case separation per unit cost. The recommendation is then checked the honest way: by adding the new data and searching again.</p>
+          </div>
+        </div>
+        <p class="refs">Data: EHT Collaboration 2019, release 2019-D01-01. Related work: Feng, Bouman &amp; Freeman 2024 (learned priors for M87*); Dahale et al. 2025 (ring ellipticity and spin); eht-imaging (Chael et al.). The design criterion is an approximation over a finite pool of explanations, not a guarantee over all images.</p>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

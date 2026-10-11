@@ -1,0 +1,1283 @@
+{
+ "threshold": 0.2,
+ "budget": 70.0,
+ "families": [
+  "rml-mem",
+  "rml-tv",
+  "nf-smooth",
+  "dip"
+ ],
+ "decisive": 4.0,
+ "records": [
+  {
+   "i": 0,
+   "with_spot": false,
+   "q_true": 0.06233736872673035,
+   "truth": "absent",
+   "initial": "undetermined",
+   "initial_interval": [
+    0.02426622249186039,
+    0.37891098856925964
+   ],
+   "initial_standard": "present",
+   "strategies": {
+    "random": {
+     "package": "ALMA-led southern|22|3",
+     "cost": 27.0,
+     "d_min": 24.704486739501245,
+     "toward_truth": [
+      1631.3471069335938,
+      17899.019729614258,
+      -12307.880798339844,
+      -4198.788642883301,
+      9685.730773925781,
+      -34416.195220947266,
+      -5590.919841766357
+     ],
+     "worst": -34416.195220947266,
+     "median": -4198.788642883301,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.1932133585214615,
+     "verdict": "undetermined",
+     "interval": [
+      0.11414048820734024,
+      0.3917199969291687
+     ]
+    },
+    "max_snr": {
+     "package": "2017 + GLT + KP|02|6",
+     "cost": 69.0,
+     "d_min": 33.51051551183747,
+     "toward_truth": [
+      7079.224334716797,
+      9861.75163269043,
+      -964.2270812988281,
+      -1150.7149810791016,
+      9578.62612915039,
+      -845.2237701416016,
+      3064.8809356689453
+     ],
+     "worst": -1150.7149810791016,
+     "median": 3064.8809356689453,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.19346153736114502,
+     "verdict": "undetermined",
+     "interval": [
+      0.1174105852842331,
+      0.2958683669567108
+     ]
+    },
+    "uv_coverage": {
+     "package": "2017 + GLT + KP|04|6",
+     "cost": 69.0,
+     "d_min": 38.249562370713285,
+     "toward_truth": [
+      7222.349922180176,
+      9353.76863861084,
+      -1421.7681617736816,
+      -3457.1338653564453,
+      9469.67663192749,
+      -1476.9799461364746,
+      4249.425243377686
+     ],
+     "worst": -3457.1338653564453,
+     "median": 4249.425243377686,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.09079820662736893,
+     "verdict": "undetermined",
+     "interval": [
+      0.07029968500137329,
+      0.29636305570602417
+     ]
+    },
+    "single_model": {
+     "package": "Full 2021+ array|02|3",
+     "cost": 40.5,
+     "d_min": 30.386776691130265,
+     "toward_truth": [
+      95165.55569458008,
+      185071.01834106445,
+      -19992.14609527588,
+      15968.898319244385,
+      85696.85762786865,
+      -135341.1457672119,
+      -1427.0025100708008
+     ],
+     "worst": -135341.1457672119,
+     "median": 15968.898319244385,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.18396906554698944,
+     "verdict": "undetermined",
+     "interval": [
+      0.09846027940511703,
+      0.3188944458961487
+     ]
+    },
+    "counterexample": {
+     "package": "ALMA-led southern|00|3",
+     "cost": 27.0,
+     "d_min": 42.31936891368729,
+     "toward_truth": [
+      43648.207580566406,
+      108160.54641723633,
+      -31444.19775390625,
+      -2679.423126220703,
+      43808.14855957031,
+      -115922.24353027344,
+      -14807.623977661133
+     ],
+     "worst": -115922.24353027344,
+     "median": -2679.423126220703,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.20025385916233063,
+     "verdict": "undetermined",
+     "interval": [
+      0.11788240075111389,
+      0.45224419236183167
+     ]
+    },
+    "counterexample_max": {
+     "package": "Full 2021+ array|00|3",
+     "cost": 40.5,
+     "d_min": 51.40007695630412,
+     "toward_truth": [
+      68967.02709960938,
+      158147.65594482422,
+      -36620.3292388916,
+      3841.630142211914,
+      59191.83979797363,
+      -142674.84562683105,
+      -16817.011894226074
+     ],
+     "worst": -142674.84562683105,
+     "median": 3841.630142211914,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.1854008436203003,
+     "verdict": "undetermined",
+     "interval": [
+      0.11552006006240845,
+      0.33357056975364685
+     ]
+    }
+   },
+   "pair_kind": "twins",
+   "n_pairs": 7
+  },
+  {
+   "i": 1,
+   "with_spot": true,
+   "q_true": 0.29349830746650696,
+   "truth": "present",
+   "initial": "undetermined",
+   "initial_interval": [
+    0.19662757217884064,
+    0.42609021067619324
+   ],
+   "initial_standard": "present",
+   "strategies": {
+    "random": {
+     "package": "North America + GLT|22|3",
+     "cost": 19.5,
+     "d_min": 0.4995195035796015,
+     "toward_truth": [
+      5.228791236877441
+     ],
+     "worst": 5.228791236877441,
+     "median": 5.228791236877441,
+     "all_decisive": true,
+     "standard": "present",
+     "q_ref": 0.3247371017932892,
+     "verdict": "undetermined",
+     "interval": [
+      0.183600053191185,
+      0.5749614238739014
+     ]
+    },
+    "max_snr": {
+     "package": "2017 + GLT + KP|02|6",
+     "cost": 69.0,
+     "d_min": 39.415751228023936,
+     "toward_truth": [
+      16009.66602897644
+     ],
+     "worst": 16009.66602897644,
+     "median": 16009.66602897644,
+     "all_decisive": true,
+     "standard": "present",
+     "q_ref": 0.29666972160339355,
+     "verdict": "supported",
+     "interval": [
+      0.24451294541358948,
+      0.34762150049209595
+     ]
+    },
+    "uv_coverage": {
+     "package": "2017 + GLT + KP|04|6",
+     "cost": 69.0,
+     "d_min": 38.12950244998836,
+     "toward_truth": [
+      12504.357776641846
+     ],
+     "worst": 12504.357776641846,
+     "median": 12504.357776641846,
+     "all_decisive": true,
+     "standard": "present",
+     "q_ref": 0.291348397731781,
+     "verdict": "undetermined",
+     "interval": [
+      0.19025443494319916,
+      0.3462042510509491
+     ]
+    },
+    "single_model": {
+     "package": "Full 2021+ array|00|3",
+     "cost": 40.5,
+     "d_min": 78.92593820943995,
+     "toward_truth": [
+      -66456.57568359375
+     ],
+     "worst": -66456.57568359375,
+     "median": -66456.57568359375,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.29051101207733154,
+     "verdict": "undetermined",
+     "interval": [
+      0.07528620958328247,
+      0.3366011381149292
+     ]
+    },
+    "counterexample": {
+     "package": "ALMA-led southern|00|3",
+     "cost": 27.0,
+     "d_min": 63.74143807340587,
+     "toward_truth": [
+      -52646.129638671875
+     ],
+     "worst": -52646.129638671875,
+     "median": -52646.129638671875,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.27595654129981995,
+     "verdict": "supported",
+     "interval": [
+      0.212662935256958,
+      0.3416700065135956
+     ]
+    },
+    "counterexample_max": {
+     "package": "2017 + NOEMA|00|6",
+     "cost": 69.0,
+     "d_min": 79.88776507296599,
+     "toward_truth": [
+      -83312.5466041565
+     ],
+     "worst": -83312.5466041565,
+     "median": -83312.5466041565,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.2853037714958191,
+     "verdict": "supported",
+     "interval": [
+      0.24359728395938873,
+      0.3503764569759369
+     ]
+    }
+   },
+   "pair_kind": "twins",
+   "n_pairs": 1
+  },
+  {
+   "i": 2,
+   "with_spot": false,
+   "q_true": 0.05304360017180443,
+   "truth": "absent",
+   "initial": "undetermined",
+   "initial_interval": [
+    0.12616828083992004,
+    0.3349202275276184
+   ],
+   "initial_standard": "present",
+   "strategies": {
+    "random": {
+     "package": "2017 + NOEMA|20|6",
+     "cost": 69.0,
+     "d_min": 24.453855741886713,
+     "toward_truth": [
+      52903.0927734375,
+      90208.55334472656,
+      67950.79846191406,
+      -91024.13403320312,
+      -20973.076538085938,
+      -55699.1806640625,
+      -111991.60009765625,
+      14586.260498046875
+     ],
+     "worst": -111991.60009765625,
+     "median": -3193.4080200195312,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.18947170674800873,
+     "verdict": "undetermined",
+     "interval": [
+      0.11449293792247772,
+      0.37162408232688904
+     ]
+    },
+    "max_snr": {
+     "package": "2017 + GLT + KP|02|6",
+     "cost": 69.0,
+     "d_min": 21.935667689545927,
+     "toward_truth": [
+      30280.658130645752,
+      16992.898502349854,
+      5373.484115600586,
+      1583.9831733703613,
+      3523.151693344116,
+      -2593.5618686676025,
+      1202.4203872680664,
+      294.92420196533203
+     ],
+     "worst": -2593.5618686676025,
+     "median": 2553.5674333572388,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.18977603316307068,
+     "verdict": "undetermined",
+     "interval": [
+      0.08187011629343033,
+      0.23448124527931213
+     ]
+    },
+    "uv_coverage": {
+     "package": "2017 + GLT + KP|04|6",
+     "cost": 69.0,
+     "d_min": 22.09126172583161,
+     "toward_truth": [
+      23957.586009979248,
+      12534.881860733032,
+      8407.878825187683,
+      7448.723554611206,
+      6519.309784173965,
+      4016.5072321891785,
+      6235.265758037567,
+      -709.6232810020447
+     ],
+     "worst": -709.6232810020447,
+     "median": 6984.016669392586,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.17152337729930878,
+     "verdict": "rejected",
+     "interval": [
+      0.08908802270889282,
+      0.18909455835819244
+     ]
+    },
+    "single_model": {
+     "package": "2017 + GLT + KP|02|6",
+     "cost": 69.0,
+     "d_min": 21.935667689545927,
+     "toward_truth": [
+      30280.658130645752,
+      16992.898502349854,
+      5373.484115600586,
+      1583.9831733703613,
+      3523.151693344116,
+      -2593.5618686676025,
+      1202.4203872680664,
+      294.92420196533203
+     ],
+     "worst": -2593.5618686676025,
+     "median": 2553.5674333572388,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.18977603316307068,
+     "verdict": "undetermined",
+     "interval": [
+      0.08187011629343033,
+      0.23448124527931213
+     ]
+    },
+    "counterexample": {
+     "package": "ALMA-led southern|00|3",
+     "cost": 27.0,
+     "d_min": 30.14888539855671,
+     "toward_truth": [
+      100734.91455078125,
+      153123.8809814453,
+      118616.7746887207,
+      -137161.986328125,
+      -29705.794067382812,
+      -85005.1527709961,
+      -177437.76806640625,
+      25757.908721923828
+     ],
+     "worst": -177437.76806640625,
+     "median": -1973.9426727294922,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.17862017452716827,
+     "verdict": "undetermined",
+     "interval": [
+      0.08799777925014496,
+      0.30475717782974243
+     ]
+    },
+    "counterexample_max": {
+     "package": "2017 + NOEMA|00|6",
+     "cost": 69.0,
+     "d_min": 38.476877255979744,
+     "toward_truth": [
+      161137.1485900879,
+      234679.10244750977,
+      184943.46612548828,
+      -194970.2771911621,
+      -40624.79885864258,
+      -128023.57540893555,
+      -263055.7201538086,
+      42448.34687805176
+     ],
+     "worst": -263055.7201538086,
+     "median": 911.7740097045898,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.1760692000389099,
+     "verdict": "undetermined",
+     "interval": [
+      0.14668908715248108,
+      0.23102644085884094
+     ]
+    }
+   },
+   "pair_kind": "twins",
+   "n_pairs": 8
+  },
+  {
+   "i": 3,
+   "with_spot": true,
+   "q_true": 0.32153815031051636,
+   "truth": "present",
+   "initial": "undetermined",
+   "initial_interval": [
+    0.11273834109306335,
+    0.37362411618232727
+   ],
+   "initial_standard": "present",
+   "strategies": {
+    "random": {
+     "package": "North America + GLT|22|6",
+     "cost": 39.0,
+     "d_min": 4.146967650215087,
+     "toward_truth": [
+      -94.86168336868286,
+      35.27340316772461,
+      -45.72368144989014,
+      -15.927213191986084,
+      16.602667093276978
+     ],
+     "worst": -94.86168336868286,
+     "median": -15.927213191986084,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.2582131624221802,
+     "verdict": "undetermined",
+     "interval": [
+      0.06613792479038239,
+      0.37343764305114746
+     ]
+    },
+    "max_snr": {
+     "package": "2017 + GLT + KP|02|6",
+     "cost": 69.0,
+     "d_min": 57.55996909821755,
+     "toward_truth": [
+      -6468.3858642578125,
+      10926.587097167969,
+      -4568.080749511719,
+      1696.4534912109375,
+      -29112.089111328125
+     ],
+     "worst": -29112.089111328125,
+     "median": -4568.080749511719,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.2631627321243286,
+     "verdict": "undetermined",
+     "interval": [
+      0.09461965411901474,
+      0.41099706292152405
+     ]
+    },
+    "uv_coverage": {
+     "package": "2017 + GLT + KP|04|6",
+     "cost": 69.0,
+     "d_min": 70.18421252150233,
+     "toward_truth": [
+      -942.5758619308472,
+      11172.17419719696,
+      -1530.719675064087,
+      1803.712022781372,
+      -15070.980781555176
+     ],
+     "worst": -15070.980781555176,
+     "median": -942.5758619308472,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.2504967153072357,
+     "verdict": "undetermined",
+     "interval": [
+      0.10478325188159943,
+      0.31037193536758423
+     ]
+    },
+    "single_model": {
+     "package": "2017 + NOEMA|22|6",
+     "cost": 69.0,
+     "d_min": 57.99024323895339,
+     "toward_truth": [
+      144810.7177734375,
+      -119036.67004394531,
+      -123903.50024414062,
+      -227888.67755126953,
+      -104889.83917236328
+     ],
+     "worst": -227888.67755126953,
+     "median": -119036.67004394531,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.24433371424674988,
+     "verdict": "undetermined",
+     "interval": [
+      0.12120150774717331,
+      0.2998344600200653
+     ]
+    },
+    "counterexample": {
+     "package": "ALMA-led southern|02|3",
+     "cost": 27.0,
+     "d_min": 53.580804082412484,
+     "toward_truth": [
+      100411.88806152344,
+      -78669.24816894531,
+      -78287.05822753906,
+      -149362.09014892578,
+      -76322.44876098633
+     ],
+     "worst": -149362.09014892578,
+     "median": -78287.05822753906,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.24569350481033325,
+     "verdict": "undetermined",
+     "interval": [
+      0.1234101951122284,
+      0.30410951375961304
+     ]
+    },
+    "counterexample_max": {
+     "package": "Full 2021+ array|02|3",
+     "cost": 40.5,
+     "d_min": 71.85492110997608,
+     "toward_truth": [
+      126149.009765625,
+      -103757.25091552734,
+      -96298.53387451172,
+      -191568.82942199707,
+      -122020.76596069336
+     ],
+     "worst": -191568.82942199707,
+     "median": -103757.25091552734,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.24593070149421692,
+     "verdict": "undetermined",
+     "interval": [
+      0.031101692467927933,
+      0.40777382254600525
+     ]
+    }
+   },
+   "pair_kind": "twins",
+   "n_pairs": 5
+  },
+  {
+   "i": 4,
+   "with_spot": false,
+   "q_true": 0.0488261803984642,
+   "truth": "absent",
+   "initial": "undetermined",
+   "initial_interval": [
+    0.10738009214401245,
+    0.4432099461555481
+   ],
+   "initial_standard": "present",
+   "strategies": {
+    "random": {
+     "package": "2017 + GLT|10|3",
+     "cost": 31.5,
+     "d_min": 2.6281517517057362,
+     "toward_truth": [
+      150.1559829711914,
+      3.355419158935547,
+      89.02982711791992,
+      -22.253110885620117,
+      -1.6565608978271484
+     ],
+     "worst": -22.253110885620117,
+     "median": 3.355419158935547,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.24458834528923035,
+     "verdict": "undetermined",
+     "interval": [
+      0.10781613737344742,
+      0.4259735643863678
+     ]
+    },
+    "max_snr": {
+     "package": "2017 + GLT + KP|02|6",
+     "cost": 69.0,
+     "d_min": 23.5595609431381,
+     "toward_truth": [
+      -4568.126259326935,
+      1960.5878076553345,
+      -23049.663511753082,
+      2307.6488842964172,
+      -4358.842773675919
+     ],
+     "worst": -23049.663511753082,
+     "median": -4358.842773675919,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.18077103793621063,
+     "verdict": "undetermined",
+     "interval": [
+      0.15147173404693604,
+      0.3451980948448181
+     ]
+    },
+    "uv_coverage": {
+     "package": "2017 + GLT + KP|04|6",
+     "cost": 69.0,
+     "d_min": 19.978883901263142,
+     "toward_truth": [
+      -3353.4180402755737,
+      2537.4038791656494,
+      -14621.576445579529,
+      2688.1034483909607,
+      -803.5381469726562
+     ],
+     "worst": -14621.576445579529,
+     "median": -803.5381469726562,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.18459567427635193,
+     "verdict": "undetermined",
+     "interval": [
+      0.1474088877439499,
+      0.3294467329978943
+     ]
+    },
+    "single_model": {
+     "package": "2017 + NOEMA|00|6",
+     "cost": 69.0,
+     "d_min": 55.37685764564248,
+     "toward_truth": [
+      237686.49096679688,
+      97303.41845703125,
+      283148.8454589844,
+      116869.78955078125,
+      -154659.50271606445
+     ],
+     "worst": -154659.50271606445,
+     "median": 116869.78955078125,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.17934007942676544,
+     "verdict": "undetermined",
+     "interval": [
+      0.131198912858963,
+      0.3695547580718994
+     ]
+    },
+    "counterexample": {
+     "package": "ALMA-led southern|00|3",
+     "cost": 27.0,
+     "d_min": 46.44262498284834,
+     "toward_truth": [
+      152649.90390014648,
+      50291.18212890625,
+      181864.56101989746,
+      65838.55184936523,
+      -96928.08514404297
+     ],
+     "worst": -96928.08514404297,
+     "median": 65838.55184936523,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.17813904583454132,
+     "verdict": "undetermined",
+     "interval": [
+      0.09352858364582062,
+      0.45503735542297363
+     ]
+    },
+    "counterexample_max": {
+     "package": "Full 2021+ array|00|3",
+     "cost": 40.5,
+     "d_min": 59.045931653852435,
+     "toward_truth": [
+      204595.20010375977,
+      73329.99438476562,
+      237193.75778198242,
+      91379.83898925781,
+      -124858.94473266602
+     ],
+     "worst": -124858.94473266602,
+     "median": 91379.83898925781,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.1750357747077942,
+     "verdict": "undetermined",
+     "interval": [
+      0.13837948441505432,
+      0.3453906774520874
+     ]
+    }
+   },
+   "pair_kind": "twins",
+   "n_pairs": 5
+  },
+  {
+   "i": 5,
+   "with_spot": true,
+   "q_true": 0.3418658673763275,
+   "truth": "present",
+   "initial": "undetermined",
+   "initial_interval": [
+    0.13654576241970062,
+    0.402074933052063
+   ],
+   "initial_standard": "present",
+   "strategies": {
+    "random": {
+     "package": "Full 2021+ array|00|3",
+     "cost": 40.5,
+     "d_min": 64.39815389388035,
+     "toward_truth": [
+      6498.281066894531,
+      -38236.08709716797,
+      53190.95178222656,
+      -69046.71997070312
+     ],
+     "worst": -69046.71997070312,
+     "median": -15868.903015136719,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.30671533942222595,
+     "verdict": "undetermined",
+     "interval": [
+      0.17081135511398315,
+      0.45576390624046326
+     ]
+    },
+    "max_snr": {
+     "package": "2017 + GLT + KP|02|6",
+     "cost": 69.0,
+     "d_min": 50.717084885941325,
+     "toward_truth": [
+      -11285.853275299072,
+      5068.810154914856,
+      1874.1520767211914,
+      -1981.9068851470947
+     ],
+     "worst": -11285.853275299072,
+     "median": -53.87740421295166,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.314541220664978,
+     "verdict": "undetermined",
+     "interval": [
+      0.17410747706890106,
+      0.34321528673171997
+     ]
+    },
+    "uv_coverage": {
+     "package": "2017 + GLT + KP|04|6",
+     "cost": 69.0,
+     "d_min": 70.52418961058923,
+     "toward_truth": [
+      -12875.930471420288,
+      -5619.472618103027,
+      -1199.894142150879,
+      -10197.301597595215
+     ],
+     "worst": -12875.930471420288,
+     "median": -7908.387107849121,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.29954972863197327,
+     "verdict": "undetermined",
+     "interval": [
+      0.17569880187511444,
+      0.3318912088871002
+     ]
+    },
+    "single_model": {
+     "package": "Full 2021+ array|00|3",
+     "cost": 40.5,
+     "d_min": 64.39815389388035,
+     "toward_truth": [
+      6498.281066894531,
+      -38236.08709716797,
+      53190.95178222656,
+      -69046.71997070312
+     ],
+     "worst": -69046.71997070312,
+     "median": -15868.903015136719,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.30671533942222595,
+     "verdict": "undetermined",
+     "interval": [
+      0.17081135511398315,
+      0.45576390624046326
+     ]
+    },
+    "counterexample": {
+     "package": "2017 + GLT + KP|06|3",
+     "cost": 34.5,
+     "d_min": 62.983156205348195,
+     "toward_truth": [
+      -11062.547754764557,
+      -9313.873299598694,
+      -2867.416296005249,
+      -3746.269878387451
+     ],
+     "worst": -11062.547754764557,
+     "median": -6530.0715889930725,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.2942124009132385,
+     "verdict": "undetermined",
+     "interval": [
+      0.1768062561750412,
+      0.3587169945240021
+     ]
+    },
+    "counterexample_max": {
+     "package": "2017 + GLT + KP|04|6",
+     "cost": 69.0,
+     "d_min": 70.52418961058923,
+     "toward_truth": [
+      -12875.930471420288,
+      -5619.472618103027,
+      -1199.894142150879,
+      -10197.301597595215
+     ],
+     "worst": -12875.930471420288,
+     "median": -7908.387107849121,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.29954972863197327,
+     "verdict": "undetermined",
+     "interval": [
+      0.17569880187511444,
+      0.3318912088871002
+     ]
+    }
+   },
+   "pair_kind": "twins",
+   "n_pairs": 4
+  },
+  {
+   "i": 6,
+   "with_spot": false,
+   "q_true": 0.062439631670713425,
+   "truth": "absent",
+   "initial": "undetermined",
+   "initial_interval": [
+    0.14744959771633148,
+    0.3840424120426178
+   ],
+   "initial_standard": "present",
+   "strategies": {
+    "random": {
+     "package": "Europe-Americas|22|6",
+     "cost": 42.0,
+     "d_min": 37.53455500666476,
+     "toward_truth": [
+      -46696.58767700195,
+      -23358.68564605713,
+      -41129.34513092041
+     ],
+     "worst": -46696.58767700195,
+     "median": -41129.34513092041,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.29250118136405945,
+     "verdict": "undetermined",
+     "interval": [
+      0.15173913538455963,
+      0.4075774550437927
+     ]
+    },
+    "max_snr": {
+     "package": "2017 + GLT + KP|02|6",
+     "cost": 69.0,
+     "d_min": 42.05202820767586,
+     "toward_truth": [
+      -1274.1155376434326,
+      1021.1086220741272,
+      6920.270431995392
+     ],
+     "worst": -1274.1155376434326,
+     "median": 1021.1086220741272,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.2646712362766266,
+     "verdict": "undetermined",
+     "interval": [
+      0.14773401618003845,
+      0.3317938446998596
+     ]
+    },
+    "uv_coverage": {
+     "package": "2017 + GLT + KP|04|6",
+     "cost": 69.0,
+     "d_min": 42.390000336541284,
+     "toward_truth": [
+      -488.3694529533386,
+      -141.97703218460083,
+      4859.954048633575
+     ],
+     "worst": -488.3694529533386,
+     "median": -141.97703218460083,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.2492487132549286,
+     "verdict": "undetermined",
+     "interval": [
+      0.13939319550991058,
+      0.3205120861530304
+     ]
+    },
+    "single_model": {
+     "package": "2017 + GLT + KP|04|6",
+     "cost": 69.0,
+     "d_min": 42.390000336541284,
+     "toward_truth": [
+      -488.3694529533386,
+      -141.97703218460083,
+      4859.954048633575
+     ],
+     "worst": -488.3694529533386,
+     "median": -141.97703218460083,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.2492487132549286,
+     "verdict": "undetermined",
+     "interval": [
+      0.13939319550991058,
+      0.3205120861530304
+     ]
+    },
+    "counterexample": {
+     "package": "ALMA-led southern|00|3",
+     "cost": 27.0,
+     "d_min": 86.32502047968647,
+     "toward_truth": [
+      -93773.20135498047,
+      -56181.70181274414,
+      -82651.30093383789
+     ],
+     "worst": -93773.20135498047,
+     "median": -82651.30093383789,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.30140987038612366,
+     "verdict": "undetermined",
+     "interval": [
+      0.1547517627477646,
+      0.38761618733406067
+     ]
+    },
+    "counterexample_max": {
+     "package": "Full 2021+ array|00|3",
+     "cost": 40.5,
+     "d_min": 105.88016186706643,
+     "toward_truth": [
+      -110692.26747131348,
+      -57704.35649108887,
+      -93657.13799285889
+     ],
+     "worst": -110692.26747131348,
+     "median": -93657.13799285889,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.3081950843334198,
+     "verdict": "supported",
+     "interval": [
+      0.20084816217422485,
+      0.376410573720932
+     ]
+    }
+   },
+   "pair_kind": "twins",
+   "n_pairs": 3
+  },
+  {
+   "i": 7,
+   "with_spot": true,
+   "q_true": 0.22678279876708984,
+   "truth": "present",
+   "initial": "undetermined",
+   "initial_interval": [
+    0.14393652975559235,
+    0.3292185366153717
+   ],
+   "initial_standard": "present",
+   "strategies": {
+    "random": {
+     "package": "2017 + GLT|22|3",
+     "cost": 31.5,
+     "d_min": 10.198727831982021,
+     "toward_truth": [
+      -26933.73691558838,
+      -27550.606689453125,
+      4438.530282974243,
+      2056.874313354492,
+      1746.3959693908691,
+      807.4239158630371,
+      1315.600814819336
+     ],
+     "worst": -27550.606689453125,
+     "median": 1315.600814819336,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.2774430215358734,
+     "verdict": "undetermined",
+     "interval": [
+      0.17553552985191345,
+      0.31300586462020874
+     ]
+    },
+    "max_snr": {
+     "package": "2017 + GLT + KP|02|6",
+     "cost": 69.0,
+     "d_min": 38.771487348667364,
+     "toward_truth": [
+      940.3902816772461,
+      -5960.305480957031,
+      67672.10430145264,
+      10787.477741241455,
+      2978.356475830078,
+      19142.76117324829,
+      -2143.2264709472656
+     ],
+     "worst": -5960.305480957031,
+     "median": 2978.356475830078,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.28227749466896057,
+     "verdict": "undetermined",
+     "interval": [
+      0.08729083836078644,
+      0.29473555088043213
+     ]
+    },
+    "uv_coverage": {
+     "package": "2017 + GLT + KP|04|6",
+     "cost": 69.0,
+     "d_min": 31.377156091099152,
+     "toward_truth": [
+      -1844.640432357788,
+      -14391.299732208252,
+      46275.82339668274,
+      5477.865010261536,
+      -728.7928695678711,
+      16319.159098625183,
+      -1401.8251342773438
+     ],
+     "worst": -14391.299732208252,
+     "median": -728.7928695678711,
+     "all_decisive": false,
+     "standard": "absent",
+     "q_ref": 0.18267038464546204,
+     "verdict": "undetermined",
+     "interval": [
+      0.13671648502349854,
+      0.2974008619785309
+     ]
+    },
+    "single_model": {
+     "package": "Full 2021+ array|00|3",
+     "cost": 40.5,
+     "d_min": 27.448315263470082,
+     "toward_truth": [
+      -45526.4296875,
+      -67671.40649414062,
+      3019.7466430664062,
+      37856.816345214844,
+      17762.700805664062,
+      -22271.067169189453,
+      -2444.1641235351562
+     ],
+     "worst": -67671.40649414062,
+     "median": -2444.1641235351562,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.2700400948524475,
+     "verdict": "supported",
+     "interval": [
+      0.20936177670955658,
+      0.2877088487148285
+     ]
+    },
+    "counterexample": {
+     "package": "2017 + GLT + NOEMA|02|3",
+     "cost": 37.5,
+     "d_min": 45.68562009588995,
+     "toward_truth": [
+      27147.05519104004,
+      -522.2913665771484,
+      13540.762573242188,
+      31042.175903320312,
+      14161.587890625,
+      -31660.930892944336,
+      7482.164520263672
+     ],
+     "worst": -31660.930892944336,
+     "median": 13540.762573242188,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.27367252111434937,
+     "verdict": "undetermined",
+     "interval": [
+      0.1257115602493286,
+      0.2942362427711487
+     ]
+    },
+    "counterexample_max": {
+     "package": "Full 2021+ array|02|3",
+     "cost": 40.5,
+     "d_min": 46.6337485710803,
+     "toward_truth": [
+      36645.395080566406,
+      3462.074905395508,
+      8461.3759765625,
+      37591.703216552734,
+      11932.655639648438,
+      -40813.073181152344,
+      7549.335266113281
+     ],
+     "worst": -40813.073181152344,
+     "median": 8461.3759765625,
+     "all_decisive": false,
+     "standard": "present",
+     "q_ref": 0.2775465250015259,
+     "verdict": "undetermined",
+     "interval": [
+      0.13306769728660583,
+      0.29145348072052
+     ]
+    }
+   },
+   "pair_kind": "twins",
+   "n_pairs": 7
+  }
+ ],
+ "summary": {
+  "random": {
+   "n": 8,
+   "mean_cost": 37.5,
+   "all_pairs_resolved": 0.125,
+   "worst_pair_toward_truth": -30983.400955200195,
+   "wrong_standard": 0.25,
+   "per_cost_worst": -993.2229753524539,
+   "wrong_anelench": 0.0,
+   "correct_anelench": 0.0,
+   "undetermined": 1.0,
+   "mean_width": 0.27872379682958126,
+   "truth_covered": 0.5
+  },
+  "max_snr": {
+   "n": 8,
+   "mean_cost": 69.0,
+   "all_pairs_resolved": 0.125,
+   "worst_pair_toward_truth": -4276.933674812317,
+   "wrong_standard": 0.125,
+   "per_cost_worst": -61.98454601177271,
+   "wrong_anelench": 0.0,
+   "correct_anelench": 0.125,
+   "undetermined": 0.875,
+   "mean_width": 0.1881116982549429,
+   "truth_covered": 0.5
+  },
+  "uv_coverage": {
+   "n": 8,
+   "mean_cost": 69.0,
+   "all_pairs_resolved": 0.125,
+   "worst_pair_toward_truth": -8166.532168388367,
+   "wrong_standard": 0.25,
+   "per_cost_worst": -118.35553867229517,
+   "wrong_anelench": 0.0,
+   "correct_anelench": 0.125,
+   "undetermined": 0.875,
+   "mean_width": 0.17095524072647095,
+   "truth_covered": 0.625
+  },
+  "single_model": {
+   "n": 8,
+   "mean_cost": 54.75,
+   "all_pairs_resolved": 0.0,
+   "worst_pair_toward_truth": -68359.06323242188,
+   "wrong_standard": 0.125,
+   "per_cost_worst": -1687.8781045042438,
+   "wrong_anelench": 0.0,
+   "correct_anelench": 0.125,
+   "undetermined": 0.875,
+   "mean_width": 0.19947094190865755,
+   "truth_covered": 0.375
+  },
+  "counterexample": {
+   "n": 8,
+   "mean_cost": 29.25,
+   "all_pairs_resolved": 0.0,
+   "worst_pair_toward_truth": -95350.64324951172,
+   "wrong_standard": 0.25,
+   "per_cost_worst": -3531.505305537471,
+   "wrong_anelench": 0.0,
+   "correct_anelench": 0.125,
+   "undetermined": 0.875,
+   "mean_width": 0.22570452466607094,
+   "truth_covered": 0.5
+  },
+  "counterexample_max": {
+   "n": 8,
+   "mean_cost": 51.1875,
+   "all_pairs_resolved": 0.0,
+   "worst_pair_toward_truth": -117775.60610198975,
+   "wrong_standard": 0.125,
+   "per_cost_worst": -2908.039656839253,
+   "wrong_anelench": 0.125,
+   "correct_anelench": 0.125,
+   "undetermined": 0.75,
+   "mean_width": 0.185373870190233,
+   "truth_covered": 0.5
+  },
+  "_initial": {
+   "n": 8,
+   "undetermined": 1.0,
+   "wrong_standard": 0.5,
+   "decided_wrong": 0.0
+  }
+ }
+}
